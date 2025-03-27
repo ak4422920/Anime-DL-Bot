@@ -7,4 +7,5 @@ redis
 python-telegram-bot  
 requests  
 aiohttp
-
+lxml_html_clean
+lxml[html_clean]
