@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 def anime_inline_details(client,message):
     try:
-        animelink = 'https://gogoanime.ai/category/{}'.format(message.text)
+        animelink = 'https://gogoanime.by/category/{}'.format(message.text)
         response = requests.get(animelink)
         plainText = response.text
         soup = BeautifulSoup(plainText, "lxml")
