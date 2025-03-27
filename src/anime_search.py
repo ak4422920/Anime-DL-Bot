@@ -23,7 +23,7 @@ def anime_search(client, message):
 
 `/search <space> Name of the Anime you want to Search.`""", parse_mode="markdown")
     else:
-        url = f"https://gogoanime.ai//search.html?keyword={query}"
+        url = f"https://gogoanime.by//search.html?keyword={query}"
         session = HTMLSession()
         response = session.get(url)
         response_html = response.text
