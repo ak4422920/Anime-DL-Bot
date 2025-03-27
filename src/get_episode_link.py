@@ -37,7 +37,7 @@ def get_ep_link(client, callback_query):
     episode = ep_num_link_get
     # print("Generating Links from", start, "to", end)
     animename = animelink.split("/")
-    URL_PATTERN = 'https://gogoanime.ai/{}-episode-{}'
+    URL_PATTERN = 'https://gogoanime.by/{}-episode-{}'
     url = URL_PATTERN.format(str_qry_final, ep_num_link_get)
     srcCode = requests.get(url)
     plainText = srcCode.text
