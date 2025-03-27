@@ -4,4 +4,7 @@ beautifulsoup4
 requests
 requests_html
 redis
+python-telegram-bot  
+requests  
+aiohttp
 
