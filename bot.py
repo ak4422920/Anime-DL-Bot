@@ -39,7 +39,6 @@ Thread(target=run).start()
 
 # Your existing bot code here...
 
-
 # Logging is optional
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
