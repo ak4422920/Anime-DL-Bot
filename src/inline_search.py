@@ -13,7 +13,7 @@ from uuid import uuid4
 # Inline Anime Search
 
 def inline_search(client, inline_query):
-    url = f"https://gogoanime.ai//search.html?keyword={inline_query.query}"
+    url = f"https://gogoanime.by//search.html?keyword={inline_query.query}"
     session = HTMLSession()
     response = session.get(url)
     response_html = response.text
