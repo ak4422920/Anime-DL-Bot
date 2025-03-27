@@ -20,6 +20,25 @@ from src.airing import airing_eps
 from src.inline_search_results import anime_inline_details
 from src.get_ep_numbers import get_ep
 import config
+import os
+from flask import Flask
+from threading import Thread
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Bot is running!"
+
+def run():
+    port = int(os.getenv("PORT", 8080))
+    app.run(host="0.0.0.0", port=port)
+
+# Start the Flask server in a separate thread
+Thread(target=run).start()
+
+# Your existing bot code here...
+
 
 # Logging is optional
 logging.basicConfig(
