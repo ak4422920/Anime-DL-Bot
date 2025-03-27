@@ -19,7 +19,7 @@ def genre_results(client, callback_query):
     gen = data_pre[1].split("/")
     gen_name = gen[2]
     try:
-        url = f"https://gogoanime.ai{data_pre[1]}?page={data_pre[0]}"
+        url = f"https://gogoanime.by{data_pre[1]}?page={data_pre[0]}"
         response = requests.get(url)
         plainText = response.text
         soup = BeautifulSoup(plainText, "lxml")
